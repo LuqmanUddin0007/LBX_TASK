@@ -1,5 +1,10 @@
 # Custom API - For Assessment
 
+# I have used Postman for testing as my local machine was having some issue running CURL, following screenshot shows my requests from postman:
+
+![image](https://github.com/user-attachments/assets/acd93297-adb2-40eb-9d2b-d17a3c391e5c)
+
+
 This application provides a REST API for batch importing and managing employees.
 
 ## Requirements
