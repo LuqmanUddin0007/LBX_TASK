@@ -4,14 +4,14 @@ This application provides a REST API for batch importing and managing employees.
 
 ## Requirements
 - PHP 8.0+
-- MySQL/MariaDB
-- Laravel 9.x
+- MySQL/MariaDB, I have used MySQL
+- Laravel 10.x
 
 ## Setup Instructions
 1. Clone this repository.
 2. Install dependencies: 
    ```bash
-    Composer Install
+    composer Install
    ```
 3. Set up your `.env` file with the database credentials.
 4. Run migrations:
@@ -24,9 +24,10 @@ This application provides a REST API for batch importing and managing employees.
    ```
 
 ### Import Employees
-To import employees from provided CSV, make a `POST` request to: /api/employee
+To import employees from provided CSV, make a `POST` request to: `/api/employee`
 
 ### Employee Endpoints
+- `POST /api/employee` - POST request with form-data key = file and attachment.
 - `GET /api/employee` - Retrieve all employees with pagination.
-- `GET /api/employee/{id}` - Retrieve a specific employee by ID.
-- `DELETE /api/employee/{id}` - Delete an employee.
+- `GET /api/employee/{id}` - Retrieve a specific employee by id.
+- `DELETE /api/employee/{id}` - Delete an employee by id.
