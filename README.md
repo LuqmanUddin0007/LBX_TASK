@@ -9,10 +9,19 @@ This application provides a REST API for batch importing and managing employees.
 
 ## Setup Instructions
 1. Clone this repository.
-2. Install dependencies: Composer Install
+2. Install dependencies: 
+   ```bash
+    Composer Install
+   ```
 3. Set up your `.env` file with the database credentials.
-4. Run migrations: php artisan migrate
+4. Run migrations:
+   ```bash
+   php artisan migrate
+   ```
 5. Start the server:
+   ```bash 
+   php artisan serve
+   ```
 
 ### Import Employees
 To import employees from provided CSV, make a `POST` request to: /api/employee
